@@ -5,8 +5,8 @@ import Timer from './../Timer';
 class App extends Component {
   render() {
     return (
-      <div>App <Timer/></div>
-    );
+      <Timer/>
+    )
   }
 }
 
