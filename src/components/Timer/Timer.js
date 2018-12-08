@@ -10,12 +10,10 @@ class Timer extends Component {
       time: 0,
     }
   }
-  componentDidMount(){
-    this.start();
-  }
+  
   //start/
 
-  start(){
+  start = () => {
     if(this.interval){
       return;
     }
@@ -26,6 +24,21 @@ class Timer extends Component {
      
      }, 50);
 }
+
+// Stop /
+
+ stop = () => {
+  
+    clearInterval(this.interval);
+    delete this.interval;
+  
+ }
+ //reset
+ reset = () => {
+   this.setState({
+     time:0
+   })
+ }
   
 
   render() {
@@ -33,9 +46,9 @@ class Timer extends Component {
 
     return<Fragment>  
       <div> { time } </div>
-      <Button type='primary'> start </Button>
-      <Button type='error'> start2 </Button>
-      <Button type='error'> reset </Button>
+      <Button action={this.start} type='primary'> start </Button>
+      <Button action={this.stop} type='error'> stop </Button>
+      <Button action={this.reset} type='error'> reset </Button>
       </Fragment> 
 
   }
