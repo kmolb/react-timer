@@ -1,0 +1,10 @@
+.Button {
+    text-align: center;
+    font-size: 20px;
+  }
+  .ButtonError{
+      background-color: red;
+  }
+  .ButtonPrimary{
+    background-color: green;
+  }

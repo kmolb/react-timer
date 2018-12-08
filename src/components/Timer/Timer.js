@@ -1,19 +1,20 @@
-import React, {
-  Component
-} from 'react';
+import React, {  Component, Fragment} from 'react';
+
 import './Timer.css';
 import Button from './../Button'
 
 class Timer extends Component {
-  constructor(props){
+  constructor(props) {
     super(props);
 
     this.time = 0;
   }
   render() {
-    return  <
-      div> Timer <Button>start</Button></div>;
-    
+    return<Fragment>  
+      <Button type='error'> start </Button>
+      <Button type='primary'> start2 </Button>
+      </Fragment> ;
+
   }
 }
 
