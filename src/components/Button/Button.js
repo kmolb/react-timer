@@ -9,9 +9,9 @@ class Button extends Component {
   render() {
     const { children,type }= this.props;
     return <div
-     className={classnames({
-      'ButtonError' : type==="error",
-      'ButtonPrimary' : type==="primary"
+     className={classnames('Button',{
+      'primary' : type==="primary",
+      'error' : type==="error"
      })}
 
     > {children} </div>;

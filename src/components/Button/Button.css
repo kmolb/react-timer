@@ -1,10 +1,13 @@
 .Button {
-    text-align: center;
-    font-size: 20px;
-  }
-  .ButtonError{
-      background-color: red;
-  }
-  .ButtonPrimary{
-    background-color: green;
-  }
+    display: inline-block;
+    padding: 15px;
+}
+
+.primary {
+    background-color: rgb(124, 233, 124);
+}
+
+
+.error {
+    background-color: red;
+}
